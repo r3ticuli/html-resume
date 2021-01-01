@@ -2,8 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Sebastian Messier",
-    "label": "Founder, Product Architect",
-    "picture": "https://r3ticuli.github.io/assets/png/seb.png",
+    "label": "Founder, Solutions Architect",
+    "picture": "www.sebastianmessier.com/assets/jpg/seb.jpg",
     "email": "sebastian.messier@gmail.com",
     "url": "https://r3ticuli.github.io/",
     "summary": "Technical founder who cares deeply about the end user, working effectively with others, and building things people need.",
@@ -48,6 +48,7 @@
       "position": "Advisor",
       "url": "https://www.getairmed.com",
       "startDate": "2020-12-07",
+      "endDate": "",
       "summary": "Transitioned from CTO to advisor role. As a board member I assist the company on technical hiring and R&D. "
     },
     {
@@ -57,6 +58,7 @@
       "position": "Software Engineer",
       "url": "https://www.capitalone.com",
       "startDate": "2019-04-30",
+      "endDate": "",
       "summary": "Delivered enhancements and features for in-branch iPad app in Swift.",
       "highlights": [
         "Established standards & best practices within the organization.",
@@ -87,7 +89,7 @@
       "startDate": "2015-01-31",
       "endDate": "2015-08-31",
       "summary": "Interned at Apple, Inc. Worked within the hardware diagnostics department. Goal was to curb return fraud by distinguishing genuine/fabricated hardware failures.",
-      "url": "https://www.apple.com/",
+      "url": "https://www.apple.com",
       "highlights": [
         "Wrote diagnostics suites for iPhone hardware in Matlab, Lua, and Objective-C.",
         "Built data collection tool to gather and organize test results at scale.",
@@ -141,22 +143,12 @@
     {
       "name": "Design",
       "level": "",
-      "keywords": ["Sketch", "Adobe Illustrator", "Figma", "Adobe XD", "Prototyping", "Customer Interviews"]
+      "keywords": ["Sketch", "Adobe Illustrator", "Figma", "Adobe XD", "Prototyping", "Customer Research"]
     },
     {
       "name": "Web Development",
       "level": "",
-      "keywords": [
-        "Single Page Apps",
-        "React",
-        "Next.JS",
-        "ES2020",
-        "Typescript",
-        "Redux",
-        "Tailwind CSS",
-        "A/B Testing",
-        "Jest"
-      ]
+      "keywords": ["React", "Next.JS", "ES2020", "Typescript", "Redux", "Tailwind CSS", "A/B Testing", "Jest"]
     },
     {
       "name": "iOS Development",
@@ -191,16 +183,8 @@
       "keywords": ["DIY Film Processing", "Black and White", "Portraits", "Landscapes", "Nature", "Urban Exploration"]
     },
     {
-      "name": "Startups",
-      "keywords": [
-        "Paul Graham",
-        "Y-Combinator",
-        "Ramen Profitability",
-        "SaaS",
-        "Product Market Fit",
-        "Blitzscaling",
-        "E-commerce"
-      ]
+      "name": "Business",
+      "keywords": ["Y-Combinator", "Ramen Profitability", "SaaS", "Product Market Fit", "Blitzscaling", "E-commerce"]
     },
     {
       "name": "3D Printing",

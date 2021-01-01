@@ -1,0 +1,11 @@
+<section class="education-entry">
+    <h3>{{this.institution}}</h3>
+    <time>{{this.startDate}} -
+        {{#if this.endDate}}
+        {{this.endDate}}
+        {{else}}
+        Present
+        {{/if}}
+    </time>
+    <strong>{{this.area}} - {{this.studyType}}</strong>
+</section>

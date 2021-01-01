@@ -21,62 +21,244 @@
     </style>
     <script src="index.js"></script>
 </head>
-<body id="themeable" class="night-sky-dark">
-  <div id="body-container">
-    <div id="about-me">
-      <picture>
-        <source srcset="./assets/jpg/seb.jp2" type="image/jp2"
-          srcset="assets/jpg/seb2x.jp2 1120w, assets/jpg/seb3x.jp2 1680w" sizes="560px"> <!-- safari -->
-        <source srcset="./assets/jpg/seb.jpg" type="image/jpg"
-          srcset="assets/jpg/seb2x.jpg 1120w, assets/jpg/seb3x.jpg 1680w" sizes="560px"> <!-- multiple -->
-        <img id="head-shot" alt="Sebastian's Headshot" />
-      </picture>
-      <h1>Sebastian Messier</h1>
-      <span>
-        Technical founder who cares deeply about the end user, working effectively with others, and building things people need.
-      </span>
-      <div class="h-line"></div>
-      <table id="link-table">
-        <td>
-          <a href="https://smessier1.medium.com/">
-            Blog
-          </a>
-        </td>
-        <td>
-          <a href="https://www.linkedin.com/in/ACoAABSyPrcB4hWY2xeXL1qduBUfuzX2JyxPgco/">
-            LinkedIn
-          </a>
-        </td>
-        <td>
-          <a href="https://github.com/r3ticuli">
-            GitHub
-          </a>
-        </td>
-
-        <td>
-          <a href="mailto:sebastian.messier@gmail.com">
-            Email
-          </a>
-        </td>
-
-        <td>
-          <a href="../assets/r.pdf">
-            Résumé
-          </a>
-        </td>
-      </table>
-    </div>
-  </div>
-</body>
-
 <div id="themer-container">
   <label for="themes">Choose a theme:</label>
   <select name="themes" id="themer" title="Modify the theme of this website">
-    <option value="night-sky-dark">night-sky-dark</option>
     <option value="rivet-dark">rivet-dark</option>
+    <option value="night-sky-dark">night-sky-dark</option>
     <option value="solarized-light">solarized-light</option>
     <option value="green-as-a-whistle-dark">green-as-a-whistle-dark</option>
   </select>
 </div>
+
+<body id="themeable" class="rivet-dark">
+  <section id="heading">
+    <hgroup>
+      <h1>Sebastian Messier</h1>
+      <h2>Founder, Solutions Architect</h2>
+      <hr />
+    </hgroup>
+  </section>
+  <section id="about">
+    <h3>About</h3>
+    Technical founder who cares deeply about the end user, working effectively with others, and building things people need.
+    <hr />
+  </section>
+  <section id="work">
+    <h3>Work</h3>
+     <section class="work-entry">
+    <h3>AirMed</h3>
+    <time>2019-07-31 -
+        2020-12-07
+    </time>
+    <strong>Co-Founder, CTO</strong>
+    <a href='https://www.getairmed.com'>www.getairmed.com</a>
+    <address>Los Angeles, CA</address>
+    <details>I realized the CPAP purchasing experience was a nightmare. I performed customer interviews to verify the problem was real and built the technology to streamline the CPAP purchase experience. Brought on an amazing CEO and raised 3M in seed funding.</details>
+    <dl>
+        <dt>Highlights</dt>
+        <dd>Mocked up, scoped, architected, and shipped our products from scratch.</dd>
+        <dd>Brought company from 0 to 18k MRR over the course of a year.</dd>
+        <dd>Raised 3m in seed funding (Bling Capital, Apollo, Justin Kan)</dd>
+    </dl>
+</section>  <section class="work-entry">
+    <h3>AirMed</h3>
+    <time>2020-12-07 -
+        Present
+    </time>
+    <strong>Advisor</strong>
+    <a href='https://www.getairmed.com'>www.getairmed.com</a>
+    <address>Los Angeles, CA</address>
+    <details>Transitioned from CTO to advisor role. As a board member I assist the company on technical hiring and R&amp;D. </details>
+</section>  <section class="work-entry">
+    <h3>Capital One</h3>
+    <time>2019-04-30 -
+        Present
+    </time>
+    <strong>Software Engineer</strong>
+    <a href='https://www.capitalone.com'>www.capitalone.com</a>
+    <address>McLean, Virginia</address>
+    <details>Delivered enhancements and features for in-branch iPad app in Swift.</details>
+    <dl>
+        <dt>Highlights</dt>
+        <dd>Established standards &amp; best practices within the organization.</dd>
+        <dd>Brought customer-centric startup mentality within team.</dd>
+        <dd>Built customer queueing API in Typescript, Lambdas, and DynamoDB.</dd>
+        <dd>Lead regular meetings to address and triage tech debt within our org.</dd>
+    </dl>
+</section>  <section class="work-entry">
+    <h3>flexEngage</h3>
+    <time>2019-04-30 -
+        2019-03-31
+    </time>
+    <strong>Software Engineer</strong>
+    <a href='https://www.flexEngage.com'>www.flexEngage.com</a>
+    <address>Orlando, Florida</address>
+    <details>A YC backed digital receipts startup. My first taste of the startup experience.</details>
+    <dl>
+        <dt>Highlights</dt>
+        <dd>Joined during period of hyper-growth. On boarded Under Armor, Michael Kors, and Grupo Exito (Amazon of South America)</dd>
+        <dd>Design, implement, test, and shipped micro-services written in Java/Spring, Docker, and deployed on AWS.</dd>
+        <dd>Lead regular meetings to address and triage issues faced by other teams.</dd>
+    </dl>
+</section>  <section class="work-entry">
+    <h3>Apple</h3>
+    <time>2015-01-31 -
+        2015-08-31
+    </time>
+    <strong>Diagnostics Engineer</strong>
+    <a href='https://www.apple.com'>www.apple.com</a>
+    <address></address>
+    <details>Interned at Apple, Inc. Worked within the hardware diagnostics department. Goal was to curb return fraud by distinguishing genuine/fabricated hardware failures.</details>
+    <dl>
+        <dt>Highlights</dt>
+        <dd>Wrote diagnostics suites for iPhone hardware in Matlab, Lua, and Objective-C.</dd>
+        <dd>Built data collection tool to gather and organize test results at scale.</dd>
+        <dd>Built and presented optical image stabilization diagnostic proof of concept to C-level executives.</dd>
+    </dl>
+</section> 
+  </section>
+  <section id="education">
+    <h3>Education</h3>
+     <section class="education-entry">
+    <h3>University of Pennsylvania</h3>
+    <time>2012-12-31 -
+        2016-12-31
+    </time>
+    <strong>Computer Science - B.S.E</strong>
+</section>  <section class="education-entry">
+    <h3>Miami Dade College</h3>
+    <time>2010-08-20 -
+        2012-12-31
+    </time>
+    <strong>General Studies - A.A.</strong>
+</section> 
+  </section>
+  <section id="skills">
+    <h3>Skills</h3>
+     <details>
+    <summary>Backend Development</summary>
+    <dl>
+        <dd>Java</dd>
+        <dd>Python</dd>
+        <dd>Node</dd>
+        <dd>Typescript</dd>
+        <dd>Docker</dd>
+        <dd>AWS</dd>
+        <dd>Serverless</dd>
+        <dd>Kinesis</dd>
+        <dd>Kafka</dd>
+        <dd>OAuth</dd>
+        <dd>Postgres</dd>
+        <dd>MySQL</dd>
+        <dd>DynamoDB</dd>
+    </dl>
+</details>  <details>
+    <summary>Design</summary>
+    <dl>
+        <dd>Sketch</dd>
+        <dd>Adobe Illustrator</dd>
+        <dd>Figma</dd>
+        <dd>Adobe XD</dd>
+        <dd>Prototyping</dd>
+        <dd>Customer Research</dd>
+    </dl>
+</details>  <details>
+    <summary>Web Development</summary>
+    <dl>
+        <dd>React</dd>
+        <dd>Next.JS</dd>
+        <dd>ES2020</dd>
+        <dd>Typescript</dd>
+        <dd>Redux</dd>
+        <dd>Tailwind CSS</dd>
+        <dd>A/B Testing</dd>
+        <dd>Jest</dd>
+    </dl>
+</details>  <details>
+    <summary>iOS Development</summary>
+    <dl>
+        <dd>Swift</dd>
+        <dd>Objective-C</dd>
+        <dd>Swift UI</dd>
+        <dd>React Native</dd>
+        <dd>Combine</dd>
+    </dl>
+</details> 
+  </section>
+  <section id="languages">
+    <h3>Languages</h3>
+     <dl>
+    <dt>Spanish</dt>
+    <dd>Native Speaker</dd>
+</dl>  <dl>
+    <dt>English</dt>
+    <dd>Native Speaker</dd>
+</dl> 
+  </section>
+  <section id="interests">
+    <h3>Interests</h3>
+     <details>
+    <summary>Music</summary>
+    <dl>
+        <dd>Analog Recording Techniques</dd>
+        <dd>Microphones</dd>
+        <dd>Effects Pedals</dd>
+        <dd>Drum Machines</dd>
+        <dd>Analog Synthesizers</dd>
+        <dd>Aluminum Guitars</dd>
+    </dl>
+</details>  <details>
+    <summary>Photography</summary>
+    <dl>
+        <dd>DIY Film Processing</dd>
+        <dd>Black and White</dd>
+        <dd>Portraits</dd>
+        <dd>Landscapes</dd>
+        <dd>Nature</dd>
+        <dd>Urban Exploration</dd>
+    </dl>
+</details>  <details>
+    <summary>Business</summary>
+    <dl>
+        <dd>Y-Combinator</dd>
+        <dd>Ramen Profitability</dd>
+        <dd>SaaS</dd>
+        <dd>Product Market Fit</dd>
+        <dd>Blitzscaling</dd>
+        <dd>E-commerce</dd>
+    </dl>
+</details>  <details>
+    <summary>3D Printing</summary>
+    <dl>
+        <dd>AutoDesk</dd>
+        <dd>Ultimaker Cura</dd>
+        <dd>Creality Ender</dd>
+    </dl>
+</details>  <details>
+    <summary>Hardware</summary>
+    <dl>
+        <dd>Raspberry Pi</dd>
+        <dd>Home Automation</dd>
+        <dd>Digital Circuits</dd>
+        <dd>DIY Keyboards</dd>
+        <dd>Quantified Self</dd>
+        <dd>Health Trackers</dd>
+        <dd>ARM Architecture</dd>
+    </dl>
+</details>  <details>
+    <summary>Software</summary>
+    <dl>
+        <dd>Compilers</dd>
+        <dd>Functional Programming</dd>
+        <dd>Generative Art</dd>
+        <dd>Kernels</dd>
+        <dd>Security</dd>
+        <dd>No-Code</dd>
+        <dd>Low-Code</dd>
+    </dl>
+</details> 
+  </section>
+</body>
 
 </html>

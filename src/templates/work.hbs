@@ -1,0 +1,22 @@
+<section class="work-entry">
+    <h3>{{this.name}}</h3>
+    <time>{{this.startDate}} -
+        {{#if this.endDate}}
+        {{this.endDate}}
+        {{else}}
+        Present
+        {{/if}}
+    </time>
+    <strong>{{this.position}}</strong>
+    {{link this.url}}
+    <address>{{this.location}}</address>
+    <details>{{this.summary}}</details>
+    {{#if this.highlights}}
+    <dl>
+        <dt>Highlights</dt>
+        {{#each this.highlights}}
+        <dd>{{this}}</dd>
+        {{/each}}
+    </dl>
+    {{/if}}
+</section>
