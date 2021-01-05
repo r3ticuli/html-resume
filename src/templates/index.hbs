@@ -3,7 +3,7 @@
 
 {{> header }}
 
-<div id="themer-container">
+<div id="themer-container" class="hidden">
   <label for="themes">Choose a theme:</label>
   <select name="themes" id="themer" title="Modify the theme of this website">
     <option value="rivet-dark">rivet-dark</option>
@@ -13,39 +13,34 @@
   </select>
 </div>
 
-<body id="themeable" class="rivet-dark">
-  <section id="heading">
-    <hgroup>
-      <h1>{{basics.name}}</h1>
-      <h2>{{basics.label}}</h2>
+<body id="themeable" class="mx-8 md:mx-auto md:w-4/6 lg:w-3/6 xl:w-2/6">
+  {{> heading basics }}
+  {{> about basics }}
+  <section class="flex flex-row space-x-6 py-1">
+    <h2 class="font-bold">Work</h2>
+    <div class="flex flex-col space-y-2">
+      {{#each work}}
+      {{> work this}}
       <hr />
-    </hgroup>
+      {{/each}}
+    </div>
   </section>
-  <section id="about">
-    <h3>About</h3>
-    {{basics.summary}}
-    <hr />
-  </section>
-  <section id="work">
-    <h3>Work</h3>
-    {{#each work}} {{> work this}} {{/each}}
-  </section>
-  <section id="education">
+  {{!-- <section id="education">
     <h3>Education</h3>
     {{#each education}} {{> education this}} {{/each}}
-  </section>
-  <section id="skills">
+  </section> --}}
+  {{!-- <section id="skills">
     <h3>Skills</h3>
     {{#each skills}} {{> skills this}} {{/each}}
-  </section>
-  <section id="languages">
+  </section> --}}
+  {{!-- <section id="languages">
     <h3>Languages</h3>
     {{#each languages}} {{> languages this}} {{/each}}
-  </section>
-  <section id="interests">
+  </section> --}}
+  {{!-- <section id="interests">
     <h3>Interests</h3>
     {{#each interests}} {{> interests this}} {{/each}}
-  </section>
+  </section> --}}
 </body>
 
 </html>

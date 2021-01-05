@@ -1,22 +1,25 @@
-<section class="work-entry">
-    <h3>{{this.name}}</h3>
-    <time>{{this.startDate}} -
-        {{#if this.endDate}}
-        {{this.endDate}}
-        {{else}}
-        Present
-        {{/if}}
-    </time>
-    <strong>{{this.position}}</strong>
-    {{link this.url}}
-    <address>{{this.location}}</address>
-    <details>{{this.summary}}</details>
+<section class="flex-col">
+    <div class="inline-flex w-full">
+        <h3 class="flex-grow">{{this.name}}</h3>
+        <time class="text-right">
+            {{#if this.startDate}}
+            <div class="inline-flex">{{getYear this.startDate}} - </div>
+            {{/if}}
+            <div class="inline-flex">{{#if this.endDate}} {{getYear this.endDate}} {{else}} Present {{/if}}</div>
+        </time>
+    </div>
+    <div class="inline-flex w-full">
+        <h3 class="flex-grow">{{this.position}}</h3>
+        <a href={{this.url}}>{{linkText this.url}}</a>
+    </div>
+    {{!-- <address>{{this.location}}</address> --}}
     {{#if this.highlights}}
     <dl>
         <dt>Highlights</dt>
         {{#each this.highlights}}
-        <dd>{{this}}</dd>
+        <dd class="ml-6">&bull;&nbsp;{{this}}</dd>
         {{/each}}
     </dl>
     {{/if}}
+    <details>{{this.summary}}</details>
 </section>

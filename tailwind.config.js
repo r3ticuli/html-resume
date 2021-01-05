@@ -1,11 +1,16 @@
 module.exports = {
-  purge: ["./src/**/*.hbs", "./src/**/*.js"],
+  // purge: {
+  //   enabled: false,
+  //   content: ["./src/**/*.hbs", "./src/**/*.js", "./src/**/*.scss"],
+  // },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    fontFamily: {
+      mono: ["Fira Code"],
+    },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
