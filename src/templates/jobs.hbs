@@ -4,12 +4,11 @@
         {{#each this}}
         <section class="flex-col">
             <div class="inline-flex w-full">
-                <span class="flex-grow font-bold prose-lg">{{this.name}}</span>
+                <span class="flex-grow font-bold">{{this.name}}</span>
                 <time class="text-right">
                     {{#if this.startDate}}
-                    <div class="inline-flex font-bold prose-lg">{{getYear this.startDate}} - </div>
                     {{/if}}
-                    <div class="inline-flex font-bold prose-lg">
+                    <div class="inline-flex font-bold">
                         {{#if this.endDate}}
                         {{getYear this.endDate}}
                         {{else}}
@@ -18,7 +17,7 @@
                     </div>
                 </time>
             </div>
-            <div class="inline-flex w-full prose-md">
+            <div class="inline-flex w-full">
                 <span class="flex-grow">{{this.position}}</span>
                 <a href={{this.url}} class="underline text-pink-600" target="_blank">
                     {{linkText this.url}}
@@ -27,7 +26,7 @@
             {{#if this.highlights}}
             <dl>
                 {{#each this.highlights}}
-                <dd class="ml-6 prose-md">&bull;&nbsp;{{this}}</dd>
+                <dd class="ml-6">&bull;&nbsp;{{this}}</dd>
                 {{/each}}
             </dl>
             {{/if}}
