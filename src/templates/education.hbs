@@ -1,10 +1,10 @@
 <section class="inline-flex flex-col sm:flex-row py-1 w-full">
-    <h2 class="font-bold w-32">Education</h2>
+    <h2 class="font-bold w-32 prose-xl">Education</h2>
     <div class="space-y-2 w-full">
         {{#each this}}
         <section class="space-y-2 w-full">
             <div class="flex flex-inline">
-                <h3 class="flex-grow font-bold">{{this.institution}}</h3>
+                <span class="flex-grow font-bold">{{this.institution}}</span>
                 <time class="font-bold">
                     {{getYear this.startDate}} -
                     {{#if this.endDate}}
@@ -14,7 +14,7 @@
                     {{/if}}
                 </time>
             </div>
-            <span class="prose italic">{{this.studyType}} in {{this.area}}</i>
+            <span class="italic">{{this.studyType}} in {{this.area}}</i>
         </section>
         {{/each}}
     </div>

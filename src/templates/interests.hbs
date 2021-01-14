@@ -1,9 +1,11 @@
 <section class="inline-flex flex-col sm:flex-row py-1 w-full">
-    <h2 class="font-bold w-32">Interests</h2>
+    <h2 class="font-bold w-32 prose-xl">Interests</h2>
     <div class="space-y-2 w-full flex-wrap">
         {{#each this}}
-        <section class="space-y-2 w-full flex-row">
-            <h3 class="flex-grow font-bold">{{this.name}}</h3>
+        <section class="space-y-2 w-full flex-col">
+            <div class="flex-row">
+                <span class="flex-grow font-bold prose-lg">{{this.name}}</span>
+            </div>
             {{#each this.keywords}}
             <span class="whitespace-nowrap">
                 {{this}}{{#isNotLast @index ../this.keywords.length}},{{/isNotLast}}

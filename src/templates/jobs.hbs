@@ -1,10 +1,10 @@
 <section class="inline-flex flex-col sm:flex-row py-1 w-full">
-    <h2 class="font-bold w-32">Work</h2>
+    <h2 class="font-bold w-32 prose-xl">Work</h2>
     <div class="space-y-2 w-full">
         {{#each this}}
         <section class="flex-col">
             <div class="inline-flex w-full">
-                <h3 class="flex-grow font-bold">{{this.name}}</h3>
+                <span class="flex-grow font-bold prose-md">{{this.name}}</span>
                 <time class="text-right">
                     {{#if this.startDate}}
                     <div class="inline-flex font-bold">{{getYear this.startDate}} - </div>
@@ -18,14 +18,16 @@
                     </div>
                 </time>
             </div>
-            <div class="inline-flex w-full">
-                <h3 class="flex-grow italic">{{this.position}}</h3>
-                <a href={{this.url}} class="italic" target="_blank">{{linkText this.url}}</a>
+            <div class="inline-flex w-full prose-md">
+                <span class="flex-grow">{{this.position}}</span>
+                <a href={{this.url}} class="italic underline text-pink-600" target="_blank">
+                    {{linkText this.url}}
+                </a>
             </div>
             {{#if this.highlights}}
             <dl>
                 {{#each this.highlights}}
-                <dd class="ml-6">&bull;&nbsp;{{this}}</dd>
+                <dd class="ml-6 prose-md">&bull;&nbsp;{{this}}</dd>
                 {{/each}}
             </dl>
             {{/if}}
