@@ -1,5 +1,10 @@
+
+
 const Handlebars = require("handlebars");
 const fs = require("fs");
+
+// create ./public dir
+fs.promises.mkdir('public', { recursive: true }).catch(console.error);
 
 // compile templates
 
