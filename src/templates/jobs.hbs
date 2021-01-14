@@ -4,12 +4,12 @@
         {{#each this}}
         <section class="flex-col">
             <div class="inline-flex w-full">
-                <span class="flex-grow font-bold prose-md">{{this.name}}</span>
+                <span class="flex-grow font-bold prose-lg">{{this.name}}</span>
                 <time class="text-right">
                     {{#if this.startDate}}
-                    <div class="inline-flex font-bold">{{getYear this.startDate}} - </div>
+                    <div class="inline-flex font-bold prose-lg">{{getYear this.startDate}} - </div>
                     {{/if}}
-                    <div class="inline-flex font-bold">
+                    <div class="inline-flex font-bold prose-lg">
                         {{#if this.endDate}}
                         {{getYear this.endDate}}
                         {{else}}
