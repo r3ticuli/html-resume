@@ -1,8 +1,16 @@
-<details>
-    <summary>{{this.name}}</summary>
-    <dl>
-        {{#each this.keywords}}
-        <dd>{{this}}</dd>
+<section class="inline-flex flex-col sm:flex-row py-1 w-full">
+    <h2 class="font-bold w-32">Interests</h2>
+    <div class="space-y-2 w-full flex-wrap">
+        {{#each this}}
+        <section class="space-y-2 w-full flex-row">
+            <h3 class="flex-grow font-bold">{{this.name}}</h3>
+            {{#each this.keywords}}
+            <span class="whitespace-nowrap">
+                {{this}}{{#isNotLast @index ../this.keywords.length}},{{/isNotLast}}
+            </span>
+            {{/each}}
+        </section>
         {{/each}}
-    </dl>
-</details>
+    </div>
+</section>
+<hr />

@@ -13,34 +13,13 @@
   </select>
 </div>
 
-<body id="themeable" class="mx-8 md:mx-auto md:w-4/6 lg:w-3/6 xl:w-2/6">
+<body id="themeable" class="mx-8 sm:mx-auto sm:w-4/6 lg:w-3/6 xl:w-2/6">
   {{> heading basics }}
   {{> about basics }}
-  <section class="flex flex-row space-x-6 py-1">
-    <h2 class="font-bold">Work</h2>
-    <div class="flex flex-col space-y-2">
-      {{#each work}}
-      {{> work this}}
-      <hr />
-      {{/each}}
-    </div>
-  </section>
-  {{!-- <section id="education">
-    <h3>Education</h3>
-    {{#each education}} {{> education this}} {{/each}}
-  </section> --}}
-  {{!-- <section id="skills">
-    <h3>Skills</h3>
-    {{#each skills}} {{> skills this}} {{/each}}
-  </section> --}}
-  {{!-- <section id="languages">
-    <h3>Languages</h3>
-    {{#each languages}} {{> languages this}} {{/each}}
-  </section> --}}
-  {{!-- <section id="interests">
-    <h3>Interests</h3>
-    {{#each interests}} {{> interests this}} {{/each}}
-  </section> --}}
+  {{> jobs work }}
+  {{> education education }}
+  {{> skills skills }}
+  {{> interests interests }}
 </body>
 
 </html>

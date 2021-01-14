@@ -16,8 +16,8 @@ Handlebars.registerPartial("about", aboutTemplate);
 const headerTemplate = fs.readFileSync("./src/templates/header.hbs").toString();
 Handlebars.registerPartial("header", headerTemplate);
 
-const workTemplate = fs.readFileSync("./src/templates/work.hbs").toString();
-Handlebars.registerPartial("work", workTemplate);
+const jobsTemplate = fs.readFileSync("./src/templates/jobs.hbs").toString();
+Handlebars.registerPartial("jobs", jobsTemplate);
 
 const educationTemplate = fs.readFileSync("./src/templates/education.hbs").toString();
 Handlebars.registerPartial("education", educationTemplate);
@@ -33,19 +33,24 @@ Handlebars.registerPartial("interests", interestsTemplate);
 
 // Register Helpers
 
-Handlebars.registerHelper("linkText", function (url) {
+Handlebars.registerHelper("linkText", (url) => {
   var url = Handlebars.escapeExpression(url);
   var text = url.split("www.")[1];
 
   return new Handlebars.SafeString(text);
 });
 
-Handlebars.registerHelper("getYear", function (date) {
+Handlebars.registerHelper("getYear", (date) => {
   // assumes format is YYYY-MM-DD
   var date = Handlebars.escapeExpression(date);
   var year = date.split("-")[0];
 
   return new Handlebars.SafeString(year);
+});
+
+Handlebars.registerHelper("isNotLast", function (a, b) {
+  var next = arguments[arguments.length - 1];
+  return a < b - 1 ? next.fn(this) : next.inverse(this);
 });
 
 // load json-resume
