@@ -6,9 +6,10 @@
             <div class="inline-flex w-full">
                 <span class="flex-grow font-bold">{{this.name}}</span>
                 <time class="text-right">
-                    {{#if this.startDate}}
-                    {{/if}}
                     <div class="inline-flex font-bold">
+                        {{#if this.startDate}}
+                        {{getYear this.startDate}} -
+                        {{/if}}
                         {{#if this.endDate}}
                         {{getYear this.endDate}}
                         {{else}}

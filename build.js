@@ -1,10 +1,8 @@
-
-
 const Handlebars = require("handlebars");
 const fs = require("fs");
 
 // create ./public dir
-fs.promises.mkdir('public', { recursive: true }).catch(console.error);
+fs.promises.mkdir("public", { recursive: true }).catch(console.error);
 
 // compile templates
 
@@ -45,7 +43,7 @@ Handlebars.registerHelper("linkText", (url) => {
   return new Handlebars.SafeString(text);
 });
 
-Handlebars.registerHelper("getYear", (date) => {
+Handlebars.registerHelper("getYear", function (date) {
   // assumes format is YYYY-MM-DD
   var date = Handlebars.escapeExpression(date);
   var year = date.split("-")[0];
